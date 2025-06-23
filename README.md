@@ -83,15 +83,6 @@ uv run conceptDriftCap.py
 uv run merge_ce_flows.py
 ```
 
----
-
-## Cleanup
-
-If `MultiAttackCaps.tar.gz` is not needed, it can be safely removed:
-
-```bash
-rm MultiAttackCaps.tar.gz
-```
 
 ---
 
