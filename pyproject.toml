@@ -1,0 +1,12 @@
+[project]
+name = "dataset_creation"
+version = "0.1.0"
+description = "Im abt to bussss"
+authors = [
+    { name = "Uh", email = "bruh@yandex.ru" }
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "pandas>=2.0"
+]
